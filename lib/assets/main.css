@@ -1,0 +1,193 @@
+nav.navbar-default{
+	background-color: rgba(0,0,0,0);
+	border: none;
+}
+
+ul.navbar-nav{
+	margin: 11px 0 10px;
+}
+
+img{
+	width: 100%;
+}
+	
+.navbar-nav > li > a, .navbar-brand{
+	color:#b3b3b3;
+	transition: all .2s ease-in-out;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:active,
+.navbar-nav > li > a:hover, 
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:active,
+
+.navbar-brand:hover, 
+.navbar-brand:focus, 
+.navbar-brand:active{
+	color: #ffffff;
+	background-color: rgba(0,0,0,0);
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
+	background-color: rgba(0,0,0,0);
+}
+
+div#jumbo-box{
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 500px;
+	margin-bottom: 30px;
+}
+
+/** tampilan foto **/
+.default{
+	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('images/default.jpg');
+}
+
+.kopi{
+	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('images/kopi.css.jpg');
+}
+
+.jernang{
+	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('images/jernang.css.jpg');
+}
+
+.sawit{
+	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('images/sawit.css.jpg');
+}
+
+.karet{
+	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('images/karet.css.jpg');
+}
+
+/*********************************************************************************************/
+
+div.jumbotron{
+	margin: 60px auto;
+	color:#ffffff;
+	background: rgba(0,0,0,0);
+}
+
+span.icon-bar{
+	background-color: #fff;
+}
+
+div.big-column{
+	margin-bottom: 25px;
+}
+
+div.text-box{
+	margin-top: 10px;
+}
+
+.btn{
+	transition: all .2s ease-in-out;
+}
+
+
+div.footer{
+	margin-top: 50px;
+	padding: 4px 0;
+	background-color: rgba(128, 128, 128, 0.22);
+   	border-top: 1px solid rgba(128, 128, 128, 0.28);
+}
+
+ul.ul-bg-color{
+	background-color:#FFFFFF;
+}
+	
+ul.ul-bg-color li{
+	border-left: 2px solid transparent;
+}
+
+ul.ul-bg-color li.active{
+	background-color: #ffffff;
+	border-left: 2px solid #337ab7;
+}
+
+ul.ul-bg-color li:hover{
+	background-color: #FFFFFF;
+	border-left: 2px solid #337ab7;
+}
+
+ul.ul-bg-color li:hover a{
+	color: #337ab7;
+	background-color: #ffffff;
+}
+
+ul.ul-bg-color li a{
+	border-radius: 0px;
+	font-size: 12px;
+}
+
+.nav > li > a{
+	padding: 5px 15px;
+}
+
+
+@keyframes shadow{
+	from {box-shadow: 0 4px 8px 0 rgba(0, 0, 255,.2), 0 6px 20px 0 rgba(0, 0, 255,.19);}
+	to {box-shadow: 0 0 0 0 rgba(0, 0, 255,.2), 0 0 0 0 rgba(0, 0, 255,.19);}
+}
+
+div.big-column:target img{
+	animation:shadow 2s ease-out;
+}
+
+div.big-column ul.navbar-default{
+	border-radius: 5px;
+}
+
+div[id^="second-section-"]:target img{	
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+div.big-column ul li{
+	list-style: none;
+	color: #808080;
+}
+
+div.big-column ul li span{
+	margin-right: 5px;
+}
+
+div.big-column ul li a{
+	color: #808080;
+}
+
+.fix-position{
+	position: fixed;
+	right: 0;
+	top: 20px;
+}
+
+div.to-top{
+	box-sizing: border-box;
+	position: fixed;
+	bottom:50px;
+	right: 30px;
+	border-radius: 5px;
+	background-color: #E6E6E6;
+	transition: all .3s ease-in-out;
+	transform: translateX(80px);
+}
+
+div.to-top:hover{
+	background-color:#f2f2f2;
+}
+
+div.to-top a{
+	font-size: 20px;
+	padding:8px 10px 4px;
+	color: #3277b3;
+	transition: all .2s ease-in-out;
+	display: block;
+}
+
+div.to-top:hover a{
+	color:#3884c7;
+}
