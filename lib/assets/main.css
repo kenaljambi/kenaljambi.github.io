@@ -121,6 +121,10 @@ ul.ul-bg-color li a{
 	font-size: 12px;
 }
 
+ul.klasifikasi{
+	margin-left: -40px;
+}
+
 .nav > li > a{
 	padding: 5px 15px;
 }
@@ -190,4 +194,11 @@ div.to-top a{
 
 div.to-top:hover a{
 	color:#3884c7;
+}
+
+
+@media screen and (max-width:770px){
+	ul.ul-bg-color{
+		display: none;
+	}
 }
