@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kenal Jambi - Hasil Produksi Tanah Jambi</title>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../assets/main.css">
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function () {
+				/** Tambah Class ketika Scroll **/
+			    var sc = $(window).scrollTop()
+			    if (sc > 510) {
+			        $("#target").addClass('fix-position')
+			    } else {
+			         $("#target").removeClass('fix-position')
+			    }
+
+			    if (sc > 600) {
+			        $(".to-top").css({
+			        	'transform':'translateX(0px)'
+			        });
+			    } else {
+			         $(".to-top").css({
+			        	'transform':'translateX(80px)'
+			        });
+			    }
+			});
+
+
+			/** ScrollSpy **/
+			$('body').scrollspy({ target: '#target' });
+
+			/** SmoothScroll **/
+			$('a[href^="#"]').on('click',function (e) {
+				e.preventDefault();
+
+				var target = this.hash;
+				var $target = $(target);
+
+				$('html, body').stop().animate({
+				    'scrollTop': $target.offset().top
+				}, 500, 'swing', function () {
+				    window.location.hash = target;
+				});
+			});
+		});
+	</script>
+</head>
+<body id="body">
+	<div class="container-fluid">
+		<div class="row">
+			<div id="jumbo-box" class="kopi">
+				<nav class="navbar navbar-wrapper">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#target-menu" aria-expanded="false">
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					    </button>
+					    <a class="navbar-brand" href="#">KenalJambi.com</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="target-menu">
+				      <ul class="nav navbar-nav">
+				        <li><a href="http://localhost/Project/KenalJambi">Home</a></li>
+				        <li><a href="#">Mengenai Jambi</a></li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Potensi Jambi <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="jernang.html">Jernang</a></li>
+				            <li><a href="kopi.html">Kopi</a></li>
+				            <li><a href="kelapa-sawit.html">Kelapa Sawit</a></li>
+				            <li><a href="karet.html">Pohon Karet</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+				    </div>
+				</nav>
+
+
+
+
+<!-- Isi Artikel -->
+
+			<div class="jumbotron">
+					<h1 class="text-center">
+													Potensi Kopi di Jambi
+					</h1>
+					<p class="text-center">
+							Kopi merupakan salah satu komiditas di dunia yang dibudidayakan lebih dari 50 negara. Dua varietas pohon kopi yang dikenal secara umum yaitu Kopi Robusta (Coffea canephora) dan Kopi Arabika (Coffea arabica).
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-9 big-column">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div id="intro">
+
+					<img class="img-rounded" src="images/kopi/kopi.jpg" alt="">
+					<h3 class="featurette-heading text-left">
+
+						Mengenal Kopi 
+						<span class="text-muted">
+						</span>
+
+					</h3>
+					<p class="text-justify">
+					Biji kopi adalah biji dari tumbuhan kopi dan merupakan sumber dari minuman kopi. Warna bijinya adalah putih dan sebagian besar berupa endosperma. Setiap buah umumnya memiliki dua biji. Buah yang hanya mengandung satu biji disebut dengan peaberry dan dipercaya memiliki rasa yang lebih baik. Dua varietas yang paling banyak dibudidayakan yaitu kopi arabika (75%) dan kopi robusta (20%). Kopi arabika mengandung sekitar 0.8-1.4 persen kafein, sedangkan kopi robusta 1.7-4% kafein. Kopi merupakan salah satu tanaman perkebunan dan komoditas ekspor utama dari setengah negara berkembang di dunia. 
+					</p>
+					
+					<ul class="klasifikasi">
+						<table>
+							<li>
+								<tr>
+									<td colspan="2"><h5>Klasifikasi dari Kopi :</h5></td>
+								</tr>
+							</li>
+							<li>
+								<tr>
+									<td>Kerajaan</td>
+									<td> : Plantae</td>
+								</tr>
+							</li>
+							<li>
+								<tr>
+									<td>Divisi</td>
+									<td> : Magnoliophyta</td>
+								</tr>
+							</li>
+							<li>
+								<tr>
+									<td>Kelas</td>
+									<td> : Magnoliopsida</td>
+								</tr>
+							</li>
+							<li>
+								<tr>
+									<td>Ordo</td>
+									<td> : Gentianacea</td>
+								</tr>
+							</li>
+							<li>
+								<tr>
+									<td>Famili</td>
+									<td> : Rubiaceae</td>
+								</tr>
+							</li>
+							<li>
+								<tr>
+									<td>Genus</td>
+									<td> : Coffea</td>
+								</tr>
+							</li>
+							<li>
+								<tr>
+									<td>Spesies</td>
+									<td> : Coffea arabica, Coffea robusta, Coffea liberica</td>
+								</tr>
+							</li>
+						</table>
+					</ul>
+
+					<p class="text-justify">
+						Pohon kopi dapat tumbuh hingga mencapai tinggi 10 meter. Tumbuhan kopi umumnya ditanam dengan jarak antara pohon sekitar dua meter. Kopi arabika dan robusta masing-masing memiliki kebutuhan lingkungan yang berbeda; kopi arabika mengutamakan termperatur yang lebih dingin dan kopi robusta membutuhkan temperatur yang lebih hangat. Seperti halnya tumbuhan berbuah lainnya, kopi membutuhkan musim kering dan matahari yang cukup banyak ketika mulai berbuah.
+					</p>
+					</div>
+
+
+				<div id="second">
+					<h3 class="featurette-heading text-left">
+						Kandungan dalam biji kopi
+						<span class="text-muted">
+						</span>
+
+					</h3>
+					<img src="images/kopi/biji-kopi.jpg" alt="" class="img-rounded">
+					<p class="text-justify">
+					<strong>Kafein</strong><br>
+					Kafein ditemukan didalam beberapa biji daun dan buah dari beberapa tanaman, kopi adalah salah satu tanaman yang memiliki kandungan kafein yang paling sering dinikmati oleh manusia, kafein diklasifikasikan sebagai drug dan diakui aman dalam dosis tertentu, melebihi dosis yang ditentukan akan menyebabkan ketergantungan, dalam konsumsi yang sudah menahun kafein dapat menyebabkan timbulnya penyakit seperti kanker dan masalah gangguan tidur.
+					</p>
+
+					<p class="text-justify">
+					<strong>Ethyphenol</strong><br>
+					Zat yang satu ini mungkin asing bagi kita, namun zat ini seperti adalah aroma khusus pada kopi, zat ini mirip dengan tar dan mengandung pheromone.
+					</p>
+
+					<p class="text-justify">
+					<strong>Quinic Acid</strong><br>
+					Rasa asam pada kopi ditentukan pada jumlah zat yang satu ini, kadar quinic acid pada kopi terkadang jumlahnya berbeda-beda, zat ini digunakan dalam ilmu kedokteran sebagai bahan pembuatan obat flu.
+					</p>
+
+					<p class="text-justify">
+					<strong>Dicaffeoylquinic Acid</strong><br>
+					Zat ini adalah salah satu zat antioksidan yang dapat menangkal radikal bebas. Meskipun kadar antioksidan didalam biji kopi tidak sebanyak tumbuhan obat lain, namun kopi adalah salah satu suplayer antioksidan paling banyak 
+					</p>
+
+					<p class="text-justify">
+					<strong>Dimethyl Disulfide</strong><br>
+					Pada biji kopi yang masih hijau atau belum dikeringkan dan di sangrai, kandungan senyawa ini termasuk senyawa yang banyak, zat ini lah yang membuat kotoran manusia berbau, mirip dengan senyawa sulfur.
+					</p>
+
+					<p class="text-justify">
+					<strong>Acetylmethylcarbinol</strong><br>
+					Zat yang satu ini adalah zat yang membuat kopi terasa gurih di lidah, zat ini banyak ditemukan pada mentega.
+					</p>
+
+					<p class="text-justify">
+					<strong>Putrescine</strong><br>
+					Zat yang dihasilkan oleh bakteri E.Coli ini adalah bakteri yang membuat sesuatu menjadi busuk, zat ini adalah hasil dari pembusukan dari bakteri tersebut.
+					</p>
+
+					<p class="text-justify">
+					<strong>Trigonelline</strong><br>
+					Zat yang satu ini adalah zat yang dapat melindungi gigi, meski kadang seorang peminum kopi agak hitam gigi nya, namun zat ini yang membuat gigi peminum tidak gampang berlubang.
+					</p>
+
+					<p class="text-justify">
+					<strong>Niacin</strong><br>
+					Zat yang satu ini adalah senyawa yang kurang baik bagi tubuh, karena senyawa ini dapat menyerap vitamin-vitamin dalam tubuh, sedangkan vitamin sangat dibutuhkan tubuh untuk proses-proses yang ada didalam tubuh, oleh karenanya meminum kopi hanya di anjurkan paling banyak 2-3 kali sehari.
+					</p>
+				</div>
+
+
+				<div id="third">
+					<h3 class="featurette-heading text-left">
+					Produksi kopi di Provinsi Jambi
+						<span class="text-muted">
+						</span>
+					</h3>
+					<img src="images/kopi/Kopi-Indonesia-nas.jpg" alt="" class="img-rounded">
+					<p class="text-justify">
+					Beberapa jenis kopi seperti Robusta dan Excelsa telah berkembang cukup pesat dan menjadi komoditi unggulan daerah Jambi. Kabupaten Tanjung Jabung Barat (Tanjabbar) memiliki kebun kopi excelsa yang cukup luas, luasnya sekitar  2.423,8 hektare dan tersebar di 6 kecamatan. Kopi jenis Ekselsa (Excelsa) ini memang jenis kopi yang paling banyak dibudidayakan di Jambi, Kopi Ekselsa sangat jarang kita temui di daerah lain di Indonesia, namun Orang Jambi telah mengembangkan perkebunan kopi jenis Ekselsa sudah puluhan tahun lamanya, sekitar 60-70 Tahun. 
+					</p>
+					<p class="text-justify">
+						Hasil dari komoditi kopi ekselsa ini paling banyak di ekspor ke Malaysia dan Singapura. Wilayah penghasil kopi lainnya di daerah Jambi yaitu di Kecamatan Pengabuan seluas 362 ha, Kecamatan Bram Itam 223 hektare, Kecamatan Senyerang seluas 176,5 hektare, dan Kecamatan Kuala Betara seluas 105 hektare. Sementara KecamatanTungkal Hilir hanya seluas 17 hektare. Sisanya ditanam secara swadaya oleh petani dan tersebar di kecamatan lainnya.
+					</p>
+				</div>
+				<div id="fourth">
+					<h3 class="featurette-heading text-left">
+					Pengolahan biji kopi
+						<span class="text-muted">
+						</span>
+					</h3>
+					<img src="images/kopi/pengolahan.jpg" alt="" class="img-rounded">
+					<p class="text-justify">
+						Ketika buah mulai matang, umumnya dipetik dengan tangan dan dibutuhkan ketelatenan petani dalam memilih buah yang benar-benar matang. Selain pemetikan secara selektif, metode lain yaitu petani memetik seluruh buah pada satu cabang, baik buah yang matang maupun tidak, untuk kemudian diseleksi di tempat pengolahan.
+					</p>
+					<p class="text-justify">
+						Di fasilitas pengolahan kopi, buah kopi melalui proses pemisahan daging buah dari bijinya, lalu direndam dalam air selama dua hari untuk melarutkan sisa daging buah dan pulp yang mungkin masih menempel pada biji. Selain menggunakan metode perendaman, biji kopi juga dapat dijemur di bawah sinar matahari hingga kering untuk memisahkan daging buah dan bijinya.
+					</p>
+					<h3 class="featurette-heading text-left">
+					Pengolahan biji kopi Arabika Gayo Asli
+						<span class="text-muted">
+						</span>
+					</h3>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uenkoIhiBoQ"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 big-column" id="target">
+				<ul class="nav navbar-default nav-stacked ul-bg-color" role="tablist">
+					<li><a href="#intro"><span class="glyphicon glyphicon-chevron-right"></span>Mengenal Kopi</a></li>
+					<li><a href="#second"><span class="glyphicon glyphicon-chevron-right"></span>Kandungan dalam biji kopi</a></li>
+					<li><a href="#third"><span class="glyphicon glyphicon-chevron-right"></span>Produksi kopi di Provinsi Jambi</a></li>
+					<li><a href="#fourth"><span class="glyphicon glyphicon-chevron-right"></span>Pengolahan biji kopi</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<!-- akhir Isi Artikel -->
+
+
+
+
+		<hr class="featurette-divider">
+
+		<div class="container-fluid footer">
+			<div class="col-xs-12 col-xs-12 col-md-12">
+				<div class="col-xs-6 col-xs-6 col-md-6">
+					<h5 class="text-left text-muted">
+						<span>Fakultas Sains dan Teknologi</span><span> / </span><span>Universitas Jambi</span>
+					</h5>
+				</div>
+				<div class="col-xs-6 col-xs-6 col-md-6">
+					<h5 class="text-right text-muted">Agroindustri dan Lingkungan</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="to-top">
+		<a href="#body"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kenal Jambi - Hasil Produksi Tanah Jambi</title>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../assets/main.css">
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function () {
+				/** Tambah Class ketika Scroll **/
+			    var sc = $(window).scrollTop()
+			    if (sc > 510) {
+			        $("#target").addClass('fix-position')
+			    } else {
+			         $("#target").removeClass('fix-position')
+			    }
+
+			    if (sc > 600) {
+			        $(".to-top").css({
+			        	'transform':'translateX(0px)'
+			        });
+			    } else {
+			         $(".to-top").css({
+			        	'transform':'translateX(80px)'
+			        });
+			    }
+			});
+
+
+			/** ScrollSpy **/
+			$('body').scrollspy({ target: '#target' });
+
+			/** SmoothScroll **/
+			$('a[href^="#"]').on('click',function (e) {
+				e.preventDefault();
+
+				var target = this.hash;
+				var $target = $(target);
+
+				$('html, body').stop().animate({
+				    'scrollTop': $target.offset().top
+				}, 500, 'swing', function () {
+				    window.location.hash = target;
+				});
+			});
+		});
+	</script>
+</head>
+<body id="body">
+	<div class="container-fluid">
+		<div class="row">
+			<div id="jumbo-box" class="sawit">
+				<nav class="navbar navbar-wrapper">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#target-menu" aria-expanded="false">
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					    </button>
+					    <a class="navbar-brand" href="#">KenalJambi.com</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="target-menu">
+				      <ul class="nav navbar-nav">
+				        <li><a href="http://localhost/Project/KenalJambi">Home</a></li>
+				        <li><a href="#">Mengenai Jambi</a></li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Potensi Jambi <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="jernang.html">Jernang</a></li>
+				            <li><a href="kopi.html">Kopi</a></li>
+				            <li><a href="kelapa-sawit.html">Kelapa Sawit</a></li>
+				            <li><a href="karet.html">Pohon Karet</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+				    </div>
+				</nav>
+
+
+
+
+<!-- Isi Artikel -->
+
+			<div class="jumbotron">
+					<h1 class="text-center">
+													Potensi Kelapa Sawit di Jambi
+					</h1>
+					<p class="text-center">
+							Kelapa sawit (Elaeis) adalah tumbuhan industri penting penghasil minyak masak, minyak industri, maupun bahan bakar (biodiesel). Indonesia adalah penghasil minyak kelapa sawit terbesar di dunia. Di Indonesia penyebarannya di daerah Aceh, pantai timur Sumatra, Jawa, Kalimantan, dan Sulawesi.
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-md-9 big-column">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div id="intro">
+
+					<img class="img-rounded" src="images/kelapa-sawit/sawit1.jpeg" alt="">
+
+					<h3 class="featurette-heading text-left">
+
+						Mengenal Kelapa Sawit 
+						<span class="text-muted">
+							
+						</span>
+
+					</h3>
+					
+					<p class="text-justify">
+					Kelapa sawit adalah salah satu dari beberapa palma yang menghasilkan minyak untuk tujuan komersil. Di Indonesia, tanaman kelapa sawit banyak dikebunkan oleh perusahaan-perusahaan besar, baik pemerintah maupun swasta. Bahkan masyarakat pun banyak bertanam kelapa sawit. Hal ini menunjukkan bahwa tanaman kelapa sawit sangat cocok tumbuh di Indonesia. Jika Indonesia ditargetkan untuk menjadi negara penghasil minyak kelapa sawit terbesar di dunia, tentunya banyak  orang-orang yang mengelolanya, mulai dari pembibitan, penanaman sampai ke teknik pengelolahan hasil panen harus berlaku profesional. 
+					</p>
+
+					
+					<ul class="klasifikasi">
+						<table>
+							<li>
+								<tr>
+									<td colspan="2"><h5>Klasifikasi dari kelapa sawit :</h5></td>
+								</tr>
+							</li>
+							<li>
+								<tr>
+									<td>Kerajaan</td>
+									<td> : Plantae</td>
+								</tr>
+							</li>
+							<li>
+								<tr>
+									<td>Divisi</td>
+									<td> : Magnoliophyta</td>
+								</tr>
+							</li>
+							<li>
+								<tr>
+									<td>Kelas</td>
+									<td> :  Liliopsida</td>
+								</tr>
+							</li>
+							<li>
+								<tr>
+									<td>Ordo</td>
+									<td> :  Arecales</td>
+								</tr>
+							</li>
+							<li>
+								<tr>
+									<td>Famili</td>
+									<td> :  Arecaceae</td>
+								</tr>
+							</li>
+							<li>
+								<tr>
+									<td>Genus</td>
+									<td> : Elaeis</td>
+								</tr>
+							</li>
+							<li>
+								<tr>
+									<td>Spesies</td>
+									<td> : Elaeis guineensis dan Elaeis oleifera</td>
+								</tr>
+							</li>
+						</table>
+					</ul>
+
+
+					</div>
+
+
+				<div id="second">
+					<h3 class="featurette-heading text-left">
+
+						Penyebaran perkebunan kelapa sawit di Indonesia
+						<span class="text-muted">
+							
+						</span>
+
+					</h3>
+					<img src="images/kelapa-sawit/Foto Penyebaran Sawit di Indonesia.png" alt="" class="img-rounded">
+					<p class="text-justify">
+					Di pulau Sumatera saja hingga tahun 1920 sudah puluhan perusahaan perkebunan yang menanam kelapa sawit. Kelapa sawit sendiri merupakan produk unggulan dari provinsi jambi. Perkebunan kelapa sawit merupakan areal perkebunan kedua terluas setelah perkebunan karet di provinsi Jambi dengan luas lahan 574,514 ha, namun merupakan penghasil produksi pertanian terbesar, yaitu 1.297.620 ton.
+					</p>
+				</div>
+
+
+				<div id="third">
+					<h3 class="featurette-heading text-left">
+					Hasil Olahan Kelapa Sawit
+						<span class="text-muted">
+						</span>
+					</h3>
+					<img class="img-rounded" src="images/kelapa-sawit/olahan.jpg" alt="">
+					<p class="text-justify">
+
+							Bagian yang paling populer untuk diolah dari kelapa sawit adalah buah.  Bagian daging buah menghasilkan minyak kelapa sawit mentah yang diolah menjadi bahan baku minyak goreng dan berbagai jenis turunannya. Kelebihan minyak nabati dari sawit adalah harga yang murah, rendah kolesterol, dan memiliki kandungan karoten tinggi. Minyak sawit juga diolah menjadi bahan baku margarin.
+
+					</p>
+					<p class="text-justify">
+						Minyak inti menjadi bahan baku minyak alkohol dan industri kosmetika. Bunga dan buahnya berupa tandan, bercabang banyak. Buahnya kecil, bila masak berwarna merah kehitaman. Daging buahnya padat. Daging dan kulit buahnya mengandung minyak. Minyaknya itu digunakan sebagai bahan minyak goreng, sabun, dan lilin. Ampasnya dimanfaatkan untuk makanan ternak. Ampas yang disebut bungkil itu digunakan sebagai salah satu bahan pembuatan makanan ayam. Tempurungnya digunakan sebagai bahan bakar dan arang.
+					</p>
+					<p class="text-justify">
+						Buah diproses dengan membuat lunak bagian daging buah dengan temperatur 90°C. Daging yang telah melunak dipaksa untuk berpisah dengan bagian inti dan cangkang dengan pressing pada mesin silinder berlubang. Daging inti dan cangkang dipisahkan dengan pemanasan dan teknik pressing. Setelah itu dialirkan ke dalam lumpur sehingga sisa cangkang akan turun ke bagian bawah lumpur.
+					</p>
+					<p class="text-justify">
+						Sisa pengolahan buah sawit sangat potensial menjadi bahan campuran makanan ternak dan difermentasikan menjadi kompos.
+					</p>
+				</div>
+				<div id="fourth">
+					<h3 class="featurette-heading text-left">
+					Video Pengolahan Kelapa Sawit
+						<span class="text-muted">
+						</span>
+					</h3>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/N0P6WyPwqKg"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="col-xs-12 col-sm-4 col-md-3 big-column" id="target">
+				<ul class="nav navbar-default nav-stacked ul-bg-color" role="tablist">
+					<li><a href="#intro"><span class="glyphicon glyphicon-chevron-right"></span>Intro</a></li>
+					<li><a href="#second"><span class="glyphicon glyphicon-chevron-right"></span>Penyebaran Kelapa Sawit</a></li>
+					<li><a href="#third"><span class="glyphicon glyphicon-chevron-right"></span>Hasil Olahan Kelapa Sawit</a></li>
+					<li><a href="#fourth"><span class="glyphicon glyphicon-chevron-right"></span>Video Pengolahan Kelapa Sawit</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<!-- akhir Isi Artikel -->
+
+
+
+
+		<hr class="featurette-divider">
+
+		<div class="container-fluid footer">
+			<div class="col-xs-12 col-xs-12 col-md-12">
+				<div class="col-xs-6 col-xs-6 col-md-6">
+					<h5 class="text-left text-muted">
+						<span>Fakultas Sains dan Teknologi</span><span> / </span><span>Universitas Jambi</span>
+					</h5>
+				</div>
+				<div class="col-xs-6 col-xs-6 col-md-6">
+					<h5 class="text-right text-muted">Agroindustri dan Lingkungan</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="to-top">
+		<a href="#body"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+	</div>
+</body>
+</html>
