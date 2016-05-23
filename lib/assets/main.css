@@ -196,6 +196,11 @@ div.to-top:hover a{
 	color:#3884c7;
 }
 
+@media screen and (max-width:980px){
+	img.img-thumbnail{
+		margin-bottom: 10px;
+	}
+}
 
 @media screen and (max-width:770px){
 	ul.ul-bg-color{
@@ -203,5 +208,9 @@ div.to-top:hover a{
 	}
 	ul.dropdown-menu > li > a{
 		color :#b3b3b3;
+	}
+
+	li.dropdown-header{
+		color:#ffffff;
 	}
 }
