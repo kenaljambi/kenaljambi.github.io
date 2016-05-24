@@ -61,6 +61,18 @@ div#jumbo-box{
 	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('images/karet.css.jpg');
 }
 
+.nanas{
+	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('images/nanas.css.jpg');
+}
+
+.teh{
+	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('images/teh.css.jpg');
+}
+
+.bambu{
+	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('images/bambu.css.jpg');
+}
+
 /*********************************************************************************************/
 
 div.jumbotron{
@@ -79,6 +91,13 @@ div.big-column{
 
 div.text-box{
 	margin-top: 10px;
+	min-height: 250px;
+}
+
+div.text-box > p{
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 .btn{
@@ -136,7 +155,9 @@ ul.klasifikasi{
 }
 
 div.big-column:target img{
-	animation:shadow 2s ease-out;
+	border-color: #66afe9;
+ 	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 }
 
 div.big-column ul.navbar-default{
@@ -145,7 +166,6 @@ div.big-column ul.navbar-default{
 
 div[id^="second-section-"]:target img{	
   border-color: #66afe9;
-  outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
           box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 }
@@ -213,4 +233,14 @@ div.to-top:hover a{
 	li.dropdown-header{
 		color:#ffffff;
 	}
+}
+
+div[id^="second-section-"]{
+	min-height: 450px;
+}
+
+div[id^="second-section-"] > p.text-center {
+	position: absolute;
+	bottom: 0;
+	left: 34%;
 }
