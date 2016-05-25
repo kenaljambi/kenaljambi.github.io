@@ -245,7 +245,7 @@ div[id^="second-section-"] > p.text-center {
 	left: 34%;
 }
 
-@media screen and (max-width:320px){
+@media screen and (max-width:325px){
 	div.text-box{
 		min-height:260px;
 	}
